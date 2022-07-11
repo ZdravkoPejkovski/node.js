@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= Practice II %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <a href="/create">User</a>
+   
+    <div class="list">
+
+      {{#each expArr}}
+          <div id="obj" class="obj">
+           <form action="/removetodo" method="POST" >
+           <button class="btn">X</button> 
+          </form>
+      
+          <button onclick="openNav()" class="btn">B</button>
+          <a>{{date}}</a> <n>{{name}}</n> <a>{{value}} </a>
+          {{description}}  
+          </div>
+      {{/each}}
+  </body>
+</html>
